@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+.venv/
+.env
+
+data/
+distributed_faiss_storage/
+logs/
+
+*.pyc
