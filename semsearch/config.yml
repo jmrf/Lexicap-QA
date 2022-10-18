@@ -1,0 +1,76 @@
+external_modules_paths:
+  - /app/mount
+
+storage:
+    - MongoStore:
+        _name: mongo-store
+        mongoURI: mongodb://mongo:27017
+        db_name: lexicap-qa
+
+index:
+
+  - LexicapFeeder:
+      _name: lexicap-data-reader
+      _module_path: feeder.VTTFeeder
+      data_path: /app/mount/data/
+      globmask: "vtt/*_small.vtt"
+      batch_size: 1000
+
+  - SentenceSplitterComponent:
+      _name: preproc_setence_split
+      endpoint: "http://ticketer:7508/v0.2/"  # ticketer URI
+      ticketer_key: "lexicap"
+
+  - MongoDocStore:
+      _name: mongo-doc-store
+      collection_name: docs
+      unique_fields:
+        - "id"
+      text_fields:
+        - "external_id"
+
+  # - ElasticIndexerComponent:
+  #     _name: elastic-indexer
+  #     elastic_endpoint: "http://localhost:9200"
+  #     index_name: wikiretrieval-dev-docs
+
+  - HTTPEncoder:
+      _name: http-textual-encoder
+      encode_endpoint: http://nginx:4000/encode
+      max_request_batch_size: 128
+      max_concurrent_tasks: 2
+
+  - FaissIndexerComponent:
+      _name: FAISS-indexer
+      out_dir: /app/mount/indices
+      file_name: lexicap_msmarco-distilbert-base-v2_faiss.index
+      index_type: "IDMap,L2norm,IVF25,Flat"
+      metric: "L2"
+      vec_dim: 768
+
+
+# query:
+
+#   - ListFeeder:
+#       _name: text-list-feeder
+
+#   - SentenceSplitterComponent:
+#       _name: preproc_setence_split
+
+#   - HTTPEncoder:
+#       _name: http-laser-encoder
+#       encode_endpoint: http://localhost:4000/encode
+#       max_request_batch_size: 32
+#       max_concurrent_tasks: 1
+
+#   - FaissQueryComponent:
+#       index_file_path: examples/WikiRetrieval/indices/WikiRetrieval_msmarco-distilbert-base-v2_faiss.index
+#       neighbors: 50
+
+#   - AggregatorComposer:
+#       op: min
+#       n_best_matches: 3
+#       mode: MONGODB
+#       collection_name: docs
+#       order: asc
+#       extra_fields: []
