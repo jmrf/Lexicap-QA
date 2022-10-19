@@ -1,0 +1,319 @@
+1 Max Tegmark: Life 3.0 | Lex Fridman Podcast #1
+2 Christof Koch: Consciousness | Lex Fridman Podcast #2
+3 Steven Pinker: AI in the Age of Reason | Lex Fridman Podcast #3
+4 Yoshua Bengio: Deep Learning | Lex Fridman Podcast #4
+5 Vladimir Vapnik: Statistical Learning | Lex Fridman Podcast #5
+6 Guido van Rossum: Python | Lex Fridman Podcast #6
+7 Jeff Atwood: Stack Overflow and Coding Horror | Lex Fridman Podcast #7
+8 Eric Schmidt: Google | Lex Fridman Podcast #8
+9 Stuart Russell: Long-Term Future of Artificial Intelligence | Lex Fridman Podcast #9
+10 Pieter Abbeel: Deep Reinforcement Learning | Lex Fridman Podcast #10
+11 Juergen Schmidhuber: Godel Machines, Meta-Learning, and LSTMs | Lex Fridman Podcast #11
+12 Tuomas Sandholm: Poker and Game Theory | Lex Fridman Podcast #12
+13 Tomaso Poggio: Brains, Minds, and Machines | Lex Fridman Podcast #13
+14 Kyle Vogt: Cruise Automation | Lex Fridman Podcast #14
+15 Leslie Kaelbling: Reinforcement Learning, Planning, and Robotics | Lex Fridman Podcast #15
+16 Eric Weinstein: Revolutionary Ideas in Science, Math, and Society | Lex Fridman Podcast #16
+17 Greg Brockman: OpenAI and AGI | Lex Fridman Podcast #17
+18 Elon Musk: Tesla Autopilot | Lex Fridman Podcast #18
+19 Ian Goodfellow: Generative Adversarial Networks (GANs) | Lex Fridman Podcast #19
+20 Oriol Vinyals: DeepMind AlphaStar, StarCraft, and Language | Lex Fridman Podcast #20
+21 Chris Lattner: Compilers, LLVM, Swift, TPU, and ML Accelerators | Lex Fridman Podcast #21
+22 Rajat Monga: TensorFlow | Lex Fridman Podcast #22
+23 Gavin Miller: Adobe Research | Lex Fridman Podcast #23
+24 Rosalind Picard: Affective Computing, Emotion, Privacy, and Health | Lex Fridman Podcast #24
+25 Jeff Hawkins: Thousand Brains Theory of Intelligence | Lex Fridman Podcast #25
+26 Sean Carroll: The Nature of the Universe, Life, and Intelligence | Lex Fridman Podcast #26
+27 Kai-Fu Lee: AI Superpowers - China and Silicon Valley | Lex Fridman Podcast #27
+28 Chris Urmson: Self-Driving Cars at Aurora, Google, CMU, and DARPA | Lex Fridman Podcast #28
+29 Gustav Soderstrom: Spotify | Lex Fridman Podcast #29
+30 Kevin Scott: Microsoft CTO | Lex Fridman Podcast #30
+31 George Hotz: Comma.ai, OpenPilot, and Autonomous Vehicles | Lex Fridman Podcast #31
+32 Paola Arlotta: Brain Development from Stem Cell to Organoid | Lex Fridman Podcast #32
+33 Keoki Jackson: Lockheed Martin | Lex Fridman Podcast #33
+34 Pamela McCorduck: Machines Who Think and the Early Days of AI | Lex Fridman Podcast #34
+35 Jeremy Howard: fast.ai Deep Learning Courses and Research | Lex Fridman Podcast #35
+36 Yann LeCun: Deep Learning, ConvNets, and Self-Supervised Learning | Lex Fridman Podcast #36
+37 Vijay Kumar: Flying Robots | Lex Fridman Podcast #37
+38 François Chollet: Keras, Deep Learning, and the Progress of AI | Lex Fridman Podcast #38
+39 Colin Angle: iRobot CEO | Lex Fridman Podcast #39
+40 Regina Barzilay: Deep Learning for Cancer Diagnosis and Treatment | Lex Fridman Podcast #40
+41 Leonard Susskind: Quantum Mechanics, String Theory and Black Holes | Lex Fridman Podcast #41
+42 Peter Norvig: Artificial Intelligence: A Modern Approach | Lex Fridman Podcast #42
+43 Gary Marcus: Toward a Hybrid of Deep Learning and Symbolic AI | Lex Fridman Podcast #43
+44 David Ferrucci: IBM Watson, Jeopardy & Deep Conversations with AI | Lex Fridman Podcast #44
+45 Michio Kaku: Future of Humans, Aliens, Space Travel & Physics | Lex Fridman Podcast #45
+46 Garry Kasparov: Chess, Deep Blue, AI, and Putin | Lex Fridman Podcast #46
+47 Sean Carroll: Quantum Mechanics and the Many-Worlds Interpretation | Lex Fridman Podcast #47
+48 Bjarne Stroustrup: C++ | Lex Fridman Podcast #48
+49 Elon Musk: Neuralink, AI, Autopilot, and the Pale Blue Dot | Lex Fridman Podcast #49
+50 Michael Kearns: Algorithmic Fairness, Privacy & Ethics | Lex Fridman Podcast #50
+51 Dava Newman: Space Exploration, Space Suits, and Life on Mars | Lex Fridman Podcast #51
+52 Gilbert Strang: Linear Algebra, Teaching, and MIT OpenCourseWare | Lex Fridman Podcast #52
+53 Noam Chomsky: Language, Cognition, and Deep Learning | Lex Fridman Podcast #53
+54 Ray Dalio: Principles, the Economic Machine, AI & the Arc of Life | Lex Fridman Podcast #54
+55 Whitney Cummings: Comedy, Robotics, Neurology, and Love | Lex Fridman Podcast #55
+56 Judea Pearl: Causal Reasoning, Counterfactuals, and the Path to AGI | Lex Fridman Podcast #56
+57 Rohit Prasad: Amazon Alexa and Conversational AI | Lex Fridman Podcast #57
+58 Michael Stevens: Vsauce | Lex Fridman Podcast #58
+59 Sebastian Thrun: Flying Cars, Autonomous Vehicles, and Education | Lex Fridman Podcast #59
+60 Jim Gates: Supersymmetry, String Theory and Proving Einstein Right | Lex Fridman Podcast #60
+61 Melanie Mitchell: Concepts, Analogies, Common Sense & Future of AI | Lex Fridman Podcast #61
+62 Donald Knuth: Algorithms, Complexity, and The Art of Computer Programming | Lex Fridman Podcast #62
+63 Stephen Kotkin: Stalin, Putin, and the Nature of Power | Lex Fridman Podcast #63
+64 Grant Sanderson: 3Blue1Brown and the Beauty of Mathematics | Lex Fridman Podcast #64
+65 Daniel Kahneman: Thinking Fast and Slow, Deep Learning, and AI | Lex Fridman Podcast #65
+66 Ayanna Howard: Human-Robot Interaction & Ethics of Safety-Critical Systems | Lex Fridman Podcast #66
+67 Paul Krugman: Economics of Innovation, Automation, Safety Nets & UBI | Lex Fridman Podcast #67
+68 Cristos Goodrow: YouTube Algorithm | Lex Fridman Podcast #68
+69 David Chalmers: The Hard Problem of Consciousness | Lex Fridman Podcast #69
+70 Jim Keller: Moore's Law, Microprocessors, and First Principles | Lex Fridman Podcast #70
+71 Vladimir Vapnik: Predicates, Invariants, and the Essence of Intelligence | Lex Fridman Podcast #71
+72 Scott Aaronson: Quantum Computing | Lex Fridman Podcast #72
+73 Andrew Ng: Deep Learning, Education, and Real-World AI | Lex Fridman Podcast #73
+74 Michael I. Jordan: Machine Learning, Recommender Systems, and Future of AI | Lex Fridman Podcast #74
+75 Marcus Hutter: Universal Artificial Intelligence, AIXI, and AGI | Lex Fridman Podcast #75
+76 John Hopfield: Physics View of the Mind and Neurobiology | Lex Fridman Podcast #76
+77 Alex Garland: Ex Machina, Devs, Annihilation, and the Poetry of Science | Lex Fridman Podcast #77
+78 Ann Druyan: Cosmos, Carl Sagan, Voyager, and the Beauty of Science | Lex Fridman Podcast #78
+79 Lee Smolin: Quantum Gravity and Einstein's Unfinished Revolution | Lex Fridman Podcast #79
+80 Vitalik Buterin: Ethereum, Cryptocurrency, and the Future of Money | Lex Fridman Podcast #80
+81 Anca Dragan: Human-Robot Interaction and Reward Engineering | Lex Fridman Podcast #81
+82 Simon Sinek: Leadership, Hard Work, Optimism and the Infinite Game | Lex Fridman Podcast #82
+83 Nick Bostrom: Simulation and Superintelligence | Lex Fridman Podcast #83
+84 William MacAskill: Effective Altruism | Lex Fridman Podcast #84
+85 Roger Penrose: Physics of Consciousness and the Infinite Universe | Lex Fridman Podcast #85
+86 David Silver: AlphaGo, AlphaZero, and Deep Reinforcement Learning | Lex Fridman Podcast #86
+87 Richard Dawkins: Evolution, Intelligence, Simulation, and Memes | Lex Fridman Podcast #87
+88 Eric Weinstein: Geometric Unity and the Call for New Ideas & Institutions | Lex Fridman Podcast #88
+89 Stephen Wolfram: Cellular Automata, Computation, and Physics | Lex Fridman Podcast #89
+90 Dmitry Korkin: Computational Biology of Coronavirus | Lex Fridman Podcast #90
+91 Jack Dorsey: Square, Cryptocurrency, and Artificial Intelligence | Lex Fridman Podcast #91
+92 Harry Cliff: Particle Physics and the Large Hadron Collider | Lex Fridman Podcast #92
+93 Daphne Koller: Biomedicine and Machine Learning | Lex Fridman Podcast #93
+94 Ilya Sutskever: Deep Learning | Lex Fridman Podcast #94
+95 Dawn Song: Adversarial Machine Learning and Computer Security | Lex Fridman Podcast #95
+96 Stephen Schwarzman: Going Big in Business, Investing, and AI | Lex Fridman Podcast #96
+97 Sertac Karaman: Robots That Fly and Robots That Drive | Lex Fridman Podcast #97
+98 Kate Darling: Social Robotics | Lex Fridman Podcast #98
+99 Karl Friston: Neuroscience and the Free Energy Principle | Lex Fridman Podcast #99
+101 Joscha Bach: Artificial Consciousness and the Nature of Reality | Lex Fridman Podcast #101
+102 Steven Pressfield: The War of Art | Lex Fridman Podcast #102
+103 Ben Goertzel: Artificial General Intelligence | Lex Fridman Podcast #103
+104 David Patterson: Computer Architecture and Data Storage | Lex Fridman Podcast #104
+105 Robert Langer: Edison of Medicine | Lex Fridman Podcast #105
+106 Matt Botvinick: Neuroscience, Psychology, and AI at DeepMind | Lex Fridman Podcast #106
+107 Peter Singer: Suffering in Humans, Animals, and AI | Lex Fridman Podcast #107
+108 Sergey Levine: Robotics and Machine Learning | Lex Fridman Podcast #108
+109 Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming | Lex Fridman Podcast #109
+110 Jitendra Malik: Computer Vision | Lex Fridman Podcast #110
+111 Richard Karp: Algorithms and Computational Complexity | Lex Fridman Podcast #111
+112 Ian Hutchinson: Nuclear Fusion, Plasma Physics, and Religion | Lex Fridman Podcast #112
+113 Manolis Kellis: Human Genome and Evolutionary Dynamics | Lex Fridman Podcast #113
+114 Russ Tedrake: Underactuated Robotics, Control, Dynamics and Touch | Lex Fridman Podcast #114
+115 Dileep George: Brain-Inspired AI | Lex Fridman Podcast #115
+116 Sara Seager: Search for Planets and Life Outside Our Solar System | Lex Fridman Podcast #116
+117 Sheldon Solomon: Death and Meaning | Lex Fridman Podcast #117
+118 Grant Sanderson: Math, Manim, Neural Networks & Teaching with 3Blue1Brown | Lex Fridman Podcast #118
+119 David Eagleman: Neuroplasticity and the Livewired Brain | Lex Fridman Podcast #119
+120 François Chollet: Measures of Intelligence | Lex Fridman Podcast #120
+121 Eugenia Kuyda: Friendship with an AI Companion | Lex Fridman Podcast #121
+122 David Fravor: UFOs, Aliens, Fighter Jets, and Aerospace Engineering | Lex Fridman Podcast #122
+123 Manolis Kellis: Origin of Life, Humans, Ideas, Suffering, and Happiness | Lex Fridman Podcast #123
+124 Stephen Wolfram: Fundamental Theory of Physics, Life, and the Universe | Lex Fridman Podcast #124
+125 Ryan Hall: Martial Arts and the Philosophy of Violence, Power, and Grace | Lex Fridman Podcast #125
+126 James Gosling: Java, JVM, Emacs, and the Early Days of Computing | Lex Fridman Podcast #126
+127 Joe Rogan: Fear, Love, Chaos, and the Joe Rogan Experience | Lex Fridman Podcast #127
+128 Michael Malice: Anarchy, Democracy, Libertarianism, Love, and Trolling | Lex Fridman Podcast #128
+129 Lisa Feldman Barrett: Counterintuitive Ideas About How the Brain Works | Lex Fridman Podcast #129
+130 Scott Aaronson: Computational Complexity and Consciousness | Lex Fridman Podcast #130
+131 Chris Lattner: The Future of Computing and Programming Languages | Lex Fridman Podcast #131
+132 George Hotz: Hacking the Simulation & Learning to Drive with Neural Nets | Lex Fridman Podcast #132
+133 Manolis Kellis: Biology of Disease | Lex Fridman Podcast #133
+134 Eric Weinstein: On the Nature of Good and Evil, Genius and Madness | Lex Fridman Podcast #134
+135 Charles Isbell: Computing, Interactive AI, and Race in America | Lex Fridman Podcast #135
+136 Dan Carlin: Hardcore History | Lex Fridman Podcast #136
+137 Alex Filippenko: Supernovae, Dark Energy, Aliens & the Expanding Universe | Lex Fridman Podcast #137
+138 Yaron Brook: Ayn Rand and the Philosophy of Objectivism | Lex Fridman Podcast #138
+139 Andrew Huberman: Neuroscience of Optimal Performance | Lex Fridman Podcast #139
+140 Lisa Feldman Barrett: Love, Evolution, and the Human Brain | Lex Fridman Podcast #140
+141 Erik Brynjolfsson: Economics of AI, Social Networks, and Technology | Lex Fridman Podcast #141
+142 Manolis Kellis: Meaning of Life, the Universe, and Everything | Lex Fridman Podcast #142
+143 John Clarke: The Art of Fighting and the Pursuit of Excellence | Lex Fridman Podcast #143
+144 Michael Littman: Reinforcement Learning and the Future of AI | Lex Fridman Podcast #144
+145 Matthew Johnson: Psychedelics | Lex Fridman Podcast #145
+146 Michael Mina: Rapid Testing, Viruses, and the Engineering Mindset | Lex Fridman Podcast #146
+147 Dmitri Dolgov: Waymo and the Future of Self-Driving Cars | Lex Fridman Podcast #147
+148 Charles Isbell and Michael Littman: Machine Learning and Education | Lex Fridman Podcast #148
+149 Diana Walsh Pasulka: Aliens, Technology, Religion & the Nature of Belief | Lex Fridman Podcast #149
+150 Michael Malice: The White Pill, Freedom, Hope, and Happiness Amidst Chaos | Lex Fridman Podcast #150
+151 Dan Kokotov: Speech Recognition with AI and Humans | Lex Fridman Podcast #151
+152 Dan Gable: Olympic Wrestling, Mental Toughness & the Making of Champions | Lex Fridman Podcast #152
+153 Dmitry Korkin: Evolution of Proteins, Viruses, Life, and AI | Lex Fridman Podcast #153
+154 Avi Loeb: Aliens, Black Holes, and the Mystery of the Oumuamua | Lex Fridman Podcast #154
+155 Max Tegmark: AI and Physics | Lex Fridman Podcast #155
+156 Tim Dillon: Comedy, Power, Conspiracy Theories, and Freedom | Lex Fridman Podcast #156
+157 Natalya Bailey: Rocket Engines and Electric Spacecraft Propulsion | Lex Fridman Podcast #157
+158 Zev Weinstein: The Next Generation of Big Ideas and Brave Minds | Lex Fridman Podcast #158
+159 Richard Craib: WallStreetBets, Numerai, and the Future of Stock Trading | Lex Fridman Podcast #159
+160 Brendan Eich: JavaScript, Firefox, Mozilla, and Brave | Lex Fridman Podcast #160
+161 Jason Calacanis: Startups, Angel Investing, Capitalism, and Friendship | Lex Fridman Podcast #161
+162 Jim Keller: The Future of Computing, AI, Life, and Consciousness | Lex Fridman Podcast #162
+163 Eric Weinstein: Difficult Conversations, Freedom of Speech, and Physics | Lex Fridman Podcast #163
+164 Andrew Huberman: Sleep, Dreams, Creativity, Fasting, and Neuroplasticity | Lex Fridman Podcast #164
+165 Josh Barnett: Philosophy of Violence, Power, and the Martial Arts | Lex Fridman #165
+166 Cal Newport: Deep Work, Focus, Productivity, Email, and Social Media | Lex Fridman Podcast #166
+167 Saagar Enjeti: Politics, History, and Power | Lex Fridman Podcast #167
+168 Silvio Micali: Cryptocurrency, Blockchain, Algorand, Bitcoin & Ethereum | Lex Fridman Podcast #168
+169 Ryan Hall: Solving Martial Arts from First Principles | Lex Fridman Podcast #169
+170 Ronald Sullivan: The Ideal of Justice in the Face of Controversy and Evil | Lex Fridman Podcast #170
+171 Anthony Pompliano: Bitcoin | Lex Fridman Podcast #171
+172 Ryan Schiller: Librex and the Free Exchange of Ideas on College Campuses | Lex Fridman Podcast #172
+173 Nic Carter: Bitcoin Core Values, Layered Scaling, and Blocksize Debates | Lex Fridman Podcast #173
+174 Tyler Cowen: Economic Growth & the Fight Against Conformity & Mediocrity | Lex Fridman Podcast #174
+175 Yannis Pappas: History and Comedy | Lex Fridman Podcast #175
+176 Robert Breedlove: Philosophy of Bitcoin from First Principles | Lex Fridman Podcast #176
+177 Risto Miikkulainen: Neuroevolution and Evolutionary Computation | Lex Fridman Podcast #177
+178 Michael Malice and Yaron Brook: Ayn Rand, Human Nature, and Anarchy | Lex Fridman Podcast #178
+179 Georges St-Pierre: The Science of Fighting | Lex Fridman Podcast #179
+180 Jeremi Suri: History of American Power | Lex Fridman Podcast #180
+181 Sergey Nazarov: Chainlink, Smart Contracts, and Oracle Networks | Lex Fridman Podcast #181
+182 John Danaher: The Path to Mastery in Jiu Jitsu, Grappling, Judo, and MMA | Lex Fridman Podcast #182
+183 Po-Shen Loh: Mathematics, Math Olympiad, Combinatorics & Contact Tracing | Lex Fridman Podcast #183
+184 Katherine de Kleer: Planets, Moons, Asteroids & Life in Our Solar System | Lex Fridman Podcast #184
+185 Sam Harris: Consciousness, Free Will, Psychedelics, AI, UFOs, and Meaning | Lex Fridman Podcast #185
+186 Bryan Johnson: Kernel Brain-Computer Interfaces | Lex Fridman Podcast #186
+187 Frank Wilczek: Physics of Quarks, Dark Matter, Complexity, Life & Aliens | Lex Fridman Podcast #187
+188 Vitalik Buterin: Ethereum 2.0 | Lex Fridman Podcast #188
+189 David Sinclair: Extending the Human Lifespan Beyond 100 Years | Lex Fridman Podcast #189
+190 Jordan Ellenberg: Mathematics of High-Dimensional Shapes and Geometries | Lex Fridman Podcast #190
+191 Daniel Schmachtenberger: Steering Civilization Away from Self-Destruction | Lex Fridman Podcast #191
+192 Charles Hoskinson: Cardano | Lex Fridman Podcast #192
+193 Rob Reid: The Existential Threat of Engineered Viruses and Lab Leaks | Lex Fridman Podcast #193
+194 Bret Weinstein: Truth, Science, and Censorship in the Time of a Pandemic | Lex Fridman Podcast #194
+195 Clara Sousa-Silva: Searching for Signs of Life on Venus and Other Planets | Lex Fridman Podcast #195
+196 Yeonmi Park: North Korea | Lex Fridman Podcast #196
+197 Jocko Willink: War, Leadership, and Discipline | Lex Fridman Podcast #197
+198 Sara Walker: The Origin of Life on Earth and Alien Worlds | Lex Fridman Podcast #198
+199 Roger Reaves: Smuggling Drugs for Pablo Escobar and the Medellin Cartel | Lex Fridman Podcast #199
+200 Michael Malice: Totalitarianism and Anarchy | Lex Fridman Podcast #200
+201 Konstantin Batygin: Planet 9 and the Edge of Our Solar System | Lex Fridman Podcast #201
+202 Rick Doblin: Psychedelics | Lex Fridman Podcast #202
+203 Anya Fernald: Regenerative Farming and the Art of Cooking Meat | Lex Fridman Podcast #203
+204 Cumrun Vafa: String Theory | Lex Fridman Podcast #204
+205 Zach Bitter: Ultramarathon Running | Lex Fridman Podcast #205
+206 Ishan Misra: Self-Supervised Deep Learning in Computer Vision | Lex Fridman Podcast #206
+207 Chris Duffin: The Mad Scientist of Strength | Lex Fridman Podcast #207
+208 Jeff Hawkins: The Thousand Brains Theory of Intelligence | Lex Fridman Podcast #208
+209 Luís and João Batalha: Fermat's Library and the Art of Studying Papers | Lex Fridman Podcast #209
+210 Matt Walker: Sleep | Lex Fridman Podcast #210
+211 Brian Muraresku: The Secret History of Psychedelics | Lex Fridman Podcast #211
+212 Joscha Bach: Nature of Reality, Dreams, and Consciousness | Lex Fridman Podcast #212
+213 Barry Barish: Gravitational Waves and the Most Precise Device Ever Built | Lex Fridman Podcast #213
+214 Jed Buchwald: Isaac Newton and the Philosophy of Science | Lex Fridman Podcast #214
+215 Wojciech Zaremba: OpenAI Codex, GPT-3, Robotics, and the Future of AI | Lex Fridman Podcast #215
+216 Vincent Racaniello: Viruses and Vaccines | Lex Fridman Podcast #216
+217 Rodney Brooks: Robotics | Lex Fridman Podcast #217
+218 Jaron Lanier: Virtual Reality, Social Media & the Future of Humans and AI | Lex Fridman Podcast #218
+219 Donald Knuth: Programming, Algorithms, Hard Problems & the Game of Life | Lex Fridman Podcast #219
+220 Niels Jorgensen: New York Firefighters and the Heroes of 9/11 | Lex Fridman Podcast #220
+221 Douglas Lenat: Cyc and the Quest to Solve Common Sense Reasoning in AI | Lex Fridman Podcast #221
+222 Jay McClelland: Neural Networks and the Emergence of Cognition | Lex Fridman Podcast #222
+223 Travis Stevens: Judo, Olympics, and Mental Toughness | Lex Fridman Podcast #223
+224 Travis Oliphant: NumPy, SciPy, Anaconda, Python & Scientific Programming | Lex Fridman Podcast #224
+225 Jeffrey Shainline: Neuromorphic Computing and Optoelectronic Intelligence | Lex Fridman Podcast #225
+226 Jo Boaler: How to Learn Math | Lex Fridman Podcast #226
+227 Sean Kelly: Existentialism, Nihilism, and the Search for Meaning | Lex Fridman Podcast #227
+228 RZA: Wu-Tang Clan, Kung Fu, Chess, God, Life, and Death | Lex Fridman Podcast #228
+229 Richard Wrangham: Violence, Sex, and Fire in Human Evolution | Lex Fridman Podcast #229
+230 Kelsi Sheren: War, Artillery, PTSD, and Love | Lex Fridman Podcast #230
+231 Alex Gladstein: Bitcoin, Authoritarianism, and Human Rights | Lex Fridman Podcast #231
+232 Brian Greene: Quantum Gravity, The Big Bang, Aliens, Death, and Meaning | Lex Fridman Podcast #232
+233 Carl Hart: Heroin, Cocaine, MDMA, Alcohol & the Role of Drugs in Society | Lex Fridman Podcast #233
+234 Stephen Wolfram: Complexity and the Fabric of Reality | Lex Fridman Podcast #234
+235 Michael Mina: Rapid COVID Testing | Lex Fridman Podcast #235
+236 Jimmy Pedro: Judo and the Forging of Champions | Lex Fridman Podcast #236
+237 Steve Viscelli: Trucking and the Decline of the American Dream | Lex Fridman Podcast #237
+238 Francis Collins: National Institutes of Health (NIH) | Lex Fridman Podcast #238
+239 Niall Ferguson: History of Money, Power, War, and Truth | Lex Fridman Podcast #239
+240 Neal Stephenson: Sci-Fi, Space, Aliens, AI, VR & the Future of Humanity | Lex Fridman Podcast #240
+241 Boris Sofman: Waymo, Cozmo, Self-Driving Cars, and the Future of Robotics | Lex Fridman Podcast #241
+242 Ben Askren: Wrestling and MMA | Lex Fridman Podcast #242
+243 Kevin Systrom: Instagram | Lex Fridman Podcast #243
+244 Robert Crews: Afghanistan, Taliban, Bin Laden, and War in the Middle East | Lex Fridman Podcast #244
+245 Tom Brands: Iowa Wrestling | Lex Fridman Podcast #245
+246 Peter Woit: Theories of Everything & Why String Theory is Not Even Wrong | Lex Fridman Podcast #246
+247 Jamie Metzl: Lab Leak Theory | Lex Fridman Podcast #247
+248 Norman Naimark: Genocide, Stalin, Hitler, Mao, and Absolute Power | Lex Fridman Podcast #248
+249 Albert Bourla: Pfizer CEO | Lex Fridman Podcast #249
+250 Peter Wang: Python and the Source Code of Humans, Computers, and Reality | Lex Fridman Podcast #250
+251 Ray Dalio: Money, Power, and the Collapse of Empires | Lex Fridman Podcast #251
+252 Elon Musk: SpaceX, Mars, Tesla Autopilot, Self-Driving, Robotics, and AI | Lex Fridman Podcast #252
+253 Michael Malice: New Year's Special | Lex Fridman Podcast #253
+254 Jay Bhattacharya: The Case Against Lockdowns | Lex Fridman Podcast #254
+255 Mark Normand: Comedy! | Lex Fridman Podcast #255
+256 Nationalism Debate: Yaron Brook and Yoram Hazony | Lex Fridman Podcast #256
+257 Brian Keating: Cosmology, Astrophysics, Aliens & Losing the Nobel Prize | Lex Fridman Podcast #257
+258 Yann LeCun: Dark Matter of Intelligence and Self-Supervised Learning | Lex Fridman Podcast #258
+259 Thomas Tull: From Batman Dark Knight Trilogy to AI and The Rolling Stones | Lex Fridman Podcast #259
+260 Georges St-Pierre, John Danaher & Gordon Ryan: The Greatest of All Time | Lex Fridman Podcast #260
+261 Philip Goff: Consciousness, Panpsychism, and the Philosophy of Mind | Lex Fridman Podcast #261
+262 Garry Nolan: UFOs and Aliens | Lex Fridman Podcast #262
+263 John Abramson: Big Pharma | Lex Fridman Podcast #263
+264 Tim Urban: Elon Musk, Neuralink, AI, Aliens, and the Future of Humanity | Lex Fridman Podcast #264
+265 Devon Larratt: Arm Wrestling | Lex Fridman Podcast #265
+266 Nicole Perlroth: Cybersecurity and the Weapons of Cyberwar | Lex Fridman Podcast #266
+267 Mark Zuckerberg: Meta, Facebook, Instagram, and the Metaverse | Lex Fridman Podcast #267
+269 Lee Cronin: Origin of Life, Aliens, Complexity, and Consciousness | Lex Fridman Podcast #269
+270 David Wolpe: Judaism | Lex Fridman Podcast #270
+271 Ariel Ekblaw: Space Colonization and Self-Assembling Space Megastructures | Lex Fridman Podcast #271
+272 Brett Johnson: US Most Wanted Cybercriminal | Lex Fridman Podcast #272
+273 Chris Blattman: War and Violence | Lex Fridman Podcast #273
+274 Karl Deisseroth: Depression, Schizophrenia, and Psychiatry | Lex Fridman Podcast #274
+275 Rick Rubin: Legendary Music Producer | Lex Fridman Podcast #275
+276 Michael Saylor: Bitcoin, Inflation, and the Future of Money | Lex Fridman Podcast #276
+277 Andrew Huberman: Focus, Stress, Relationships, and Friendship | Lex Fridman Podcast #277
+278 Skye Fitzgerald: Hunger, War, and Human Suffering | Lex Fridman Podcast #278
+279 Alien Debate: Sara Walker and Lee Cronin | Lex Fridman Podcast #279
+280 Cristiano Amon: Qualcomm CEO | Lex Fridman Podcast #280
+281 Grimes: Music, AI, and the Future of Humanity | Lex Fridman Podcast #281
+284 Saifedean Ammous: Bitcoin, Anarchy, and Austrian Economics | Lex Fridman Podcast #284
+285 Glenn Loury: Race, Racism, Identity Politics, and Cancel Culture | Lex Fridman Podcast #285
+286 Oliver Stone: Vladimir Putin and War in Ukraine | Lex Fridman Podcast #286
+288 Sarma Melngailis: Bad Vegan, Fraud, Prison, and Sociopathy | Lex Fridman Podcast #288
+289 Stephen Kotkin: Putin, Stalin, Hitler, Zelenskyy, and War in Ukraine | Lex Fridman Podcast #289
+290 Dan Reynolds: Imagine Dragons | Lex Fridman Podcast #290
+292 Robin Hanson: Alien Civilizations, UFOs, and the Future of Humanity | Lex Fridman Podcast #292
+293 Donald Hoffman: Reality is an Illusion - How Evolution Hid the Truth | Lex Fridman Podcast #293
+294 Tony Fadell: iPhone, iPod, Nest, Steve Jobs, Design, and Engineering | Lex Fridman Podcast #294
+295 Richard Wolff: Marxism and Communism | Lex Fridman Podcast #295
+296 Douglas Murray: Racism, Marxism, and the War on the West | Lex Fridman Podcast #296
+297 Jonathan Reisman: The Human Body - From Sex & Sperm to Hands & Heart | Lex Fridman Podcast #297
+298 Susan Cain: The Power of Introverts and Loneliness | Lex Fridman Podcast #298
+299 Demis Hassabis: DeepMind - AI, Superintelligence & the Future of Humanity | Lex Fridman Podcast #299
+300 Joe Rogan: Comedy, Controversy, Aliens, UFOs, Putin, CIA, and Freedom | Lex Fridman Podcast #300
+301 Jack Barsky: KGB Spy | Lex Fridman Podcast #301
+302 Richard Haier: IQ Tests, Human Intelligence, and Group Differences | Lex Fridman Podcast #302
+303 Steve Keen: Marxism, Capitalism, and Economics | Lex Fridman Podcast #303
+304 Bishop Robert Barron: Christianity and the Catholic Church | Lex Fridman Podcast #304
+305 Martin Rees: Black Holes, Alien Life, Dark Matter, and the Big Bang | Lex Fridman Podcast #305
+306 Oriol Vinyals: Deep Learning and Artificial General Intelligence | Lex Fridman Podcast #306
+307 Brian Armstrong: Coinbase, Cryptocurrency, and Government Regulation | Lex Fridman Podcast #307
+308 Ryan Graves: UFOs, Fighter Jets, and Aliens | Lex Fridman Podcast #308
+309 John Carmack: Doom, Quake, VR, AGI, Programming, Video Games, and Rockets | Lex Fridman Podcast #309
+310 Andrew Bustamante: CIA Spy | Lex Fridman Podcast #310
+311 Magatte Wade: Africa, Capitalism, Communism, and the Future of Humanity | Lex Fridman Podcast #311
+312 Duncan Trussell: Comedy, Sentient Robots, Suffering, Love & Burning Man | Lex Fridman Podcast #312
+313 Jordan Peterson: Life, Death, Power, Fame, and Meaning | Lex Fridman Podcast #313
+314 Liv Boeree: Poker, Game Theory, AI, Simulation, Aliens & Existential Risk | Lex Fridman Podcast #314
+315 Magnus Carlsen: Greatest Chess Player of All Time | Lex Fridman Podcast #315
+316 Noam Chomsky: Putin, Ukraine, China, and Nuclear War | Lex Fridman Podcast #316
+317 John Vervaeke: Meaning Crisis, Atheism, Religion & the Search for Wisdom | Lex Fridman Podcast #317
+318 Nick Lane: Origin of Life, Evolution, Aliens, Biology, and Consciousness | Lex Fridman Podcast #318
+319 Botez Sisters: Chess, Streaming, and Fame | Lex Fridman Podcast #319
+320 Christopher Capozzola: World War I, Ideology, Propaganda, and Politics | Lex Fridman Podcast #320
+321 Ray Kurzweil: Singularity, Superintelligence, and Immortality | Lex Fridman Podcast #321
+322 Rana el Kaliouby: Emotion AI, Social Robots, and Self-Driving Cars | Lex Fridman Podcast #322
+323 Will Sasso: Comedy, MADtv, AI, Friendship, Madness, and Pro Wrestling | Lex Fridman Podcast #323
+324 Daniel Negreanu: Poker | Lex Fridman Podcast #324
+325 Michael Levin: Biology, Life, Aliens, Evolution, Embryogenesis & Xenobots | Lex Fridman Podcast #325

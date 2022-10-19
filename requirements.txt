@@ -1,0 +1,5 @@
+distributed_faiss~=0.1.0
+nltk
+tabulate
+sentence_transformers
+webvtt-py

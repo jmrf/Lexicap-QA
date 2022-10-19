@@ -2,8 +2,10 @@
 .venv/
 .env
 
-data/
 distributed_faiss_storage/
 logs/
+
+data/**
+!data/episode_names.txt
 
 *.pyc

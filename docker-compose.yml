@@ -17,7 +17,7 @@ services:
       - LOG_LEVEL=INFO
     depends_on:
       - mongo
-      - textual-encoders-cpu
+      - textual-encoders
 
 
   search-indexer:
@@ -36,7 +36,7 @@ services:
     depends_on:
       - mongo
       - ticketer
-      - textual-encoders-cpu
+      - textual-encoders
 
   ticketer:
     image: registry.melior.ai/ticketer:latest
@@ -56,8 +56,10 @@ services:
     depends_on:
       - redis
 
-  textual-encoders-cpu:
-    image: registry.melior.ai/textual-encoders-cpu:0.10.1
+  textual-encoders:
+    # image: registry.melior.ai/textual-encoders-cpu:0.10.1
+    image: registry.melior.ai/textual-encoders-cuda:0.8.3
+    runtime: nvidia
     networks:
       - "semantic-search-network"
     scale: 2
