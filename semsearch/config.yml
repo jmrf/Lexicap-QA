@@ -68,11 +68,13 @@ query:
       neighbors: 50
 
   - AggregatorComposer:
-      op: avg
+      # fetches all docs from Mongo where 'extra_fields.semantic': True
+      # to compose an inverse index from doc.section.chunk -> doc.section -> doc
+      op: max
       n_best_matches: 100
       mode: MONGODB
       collection_name: docs
-      order: asc
+      order: desc
       extra_fields:
         - guest
         - title

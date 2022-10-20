@@ -25,7 +25,7 @@ def install(packages: List[str]) -> None:
 
     for package in packages:
         logger.warning(f"Installing: '{package}'")
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 
 # Nasty trick to avoid creating a docker image where we install this packages,
@@ -199,7 +199,11 @@ class VTTFeeder(FileFeeder):
                 chunks = self._split_with_text_indices(sfile)
 
             # We index a Document with only 1 section per sentence
-            doc = Doc(external_id=str(s_i), text="", extra_fields=ep_info)
+            extra_fields = {
+                "semantic": True,  # Or all sort of bad things will happen ;)
+                **ep_info,
+            }
+            doc = Doc(external_id=str(s_i), text="", extra_fields=extra_fields)
             doc.name = f"{ep_info['title']} #{s_i}"
             for c_i, chunk in enumerate(chunks):
                 doc.add_section(
