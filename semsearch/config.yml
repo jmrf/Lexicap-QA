@@ -13,7 +13,7 @@ index:
       _name: lexicap-data-reader
       _module_path: feeder.VTTFeeder
       data_path: /app/mount/data/
-      globmask: "vtt/*_00*_large.vtt"
+      globmask: "vtt/*_large.vtt"
       batch_size: 1000
 
   - SentenceSplitterComponent:
