@@ -201,9 +201,9 @@ class VTTFeeder(FileFeeder):
             # We index a Document with only 1 section per sentence
             doc = Doc(external_id=str(s_i), text="", extra_fields=ep_info)
             doc.name = f"{ep_info['title']} #{s_i}"
-            for chunk in chunks:
+            for c_i, chunk in enumerate(chunks):
                 doc.add_section(
-                    section_number=s_i, name="", text=chunk["text"], weight=1
+                    section_number=c_i, name="", text=chunk["text"], weight=1
                 )
 
             transformed_data.append(doc)

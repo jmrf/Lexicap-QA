@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   search-inference:
-    image: registry.melior.ai/semantic-search:latest
+    image: registry.melior.ai/semantic-search:1.1.0
     networks:
       - "semantic-search-network"
     ports:
@@ -22,7 +22,7 @@ services:
 
 
   search-indexer:
-    image: registry.melior.ai/semantic-search:latest
+    image: registry.melior.ai/semantic-search:1.1.0
     networks:
       - "semantic-search-network"
     volumes:
@@ -41,7 +41,7 @@ services:
       - textual-encoders
 
   ticketer:
-    image: registry.melior.ai/ticketer:latest
+    image: registry.melior.ai/ticketer:0.2.1
     # network_mode: "host"
     networks:
       - "semantic-search-network"

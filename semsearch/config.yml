@@ -49,28 +49,30 @@ index:
       vec_dim: 768
 
 
-# query:
+query:
 
-#   - ListFeeder:
-#       _name: text-list-feeder
+  - ListFeeder:
+      _name: text-list-feeder
 
-#   - SentenceSplitterComponent:
-#       _name: preproc_setence_split
+  - SentenceSplitterComponent:
+      _name: preproc_setence_split
 
-#   - HTTPEncoder:
-#       _name: http-laser-encoder
-#       encode_endpoint: http://localhost:4000/encode
-#       max_request_batch_size: 32
-#       max_concurrent_tasks: 1
+  - HTTPEncoder:
+      _name: http-textual-encoder
+      encode_endpoint: http://nginx:4000/encode
+      max_request_batch_size: 32
+      max_concurrent_tasks: 1
 
-#   - FaissQueryComponent:
-#       index_file_path: examples/WikiRetrieval/indices/WikiRetrieval_msmarco-distilbert-base-v2_faiss.index
-#       neighbors: 50
+  - FaissQueryComponent:
+      index_file_path: /app/mount/indices/lexicap_msmarco-distilbert-base-v2_faiss.index
+      neighbors: 50
 
-#   - AggregatorComposer:
-#       op: min
-#       n_best_matches: 3
-#       mode: MONGODB
-#       collection_name: docs
-#       order: asc
-#       extra_fields: []
+  - AggregatorComposer:
+      op: avg
+      n_best_matches: 100
+      mode: MONGODB
+      collection_name: docs
+      order: asc
+      extra_fields:
+        - guest
+        - title
