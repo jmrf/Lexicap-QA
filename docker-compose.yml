@@ -17,6 +17,7 @@ services:
       - LOG_LEVEL=INFO
     depends_on:
       - mongo
+      - nginx
       - textual-encoders
 
 
@@ -36,6 +37,7 @@ services:
     depends_on:
       - mongo
       - ticketer
+      - nginx
       - textual-encoders
 
   ticketer:
@@ -70,13 +72,12 @@ services:
       - msmarco-distilbert-base-v2
       - --model-dir
       - /app/mount/models
+      - --use-cuda
       - -vv
     volumes:
       - "./semsearch/models/:/app/mount/models"
     environment:
       - LOG_LEVEL=DEBUG
-    depends_on:
-      - nginx
 
   redis:
     image: redis
@@ -98,6 +99,8 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - "4000:4000"
+    depends_on:
+      - textual-encoders
 
   mongo:
     image: mongo:latest

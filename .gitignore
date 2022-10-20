@@ -3,6 +3,7 @@
 .env
 
 distributed_faiss_storage/
+semsearch/indices/
 logs/
 
 data/**
