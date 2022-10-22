@@ -20,7 +20,6 @@ services:
       - nginx
       - textual-encoders
 
-
   search-indexer:
     image: registry.melior.ai/semantic-search:1.1.0
     networks:
@@ -36,9 +35,33 @@ services:
       - LOG_LEVEL=INFO
     depends_on:
       - mongo
+      - elasticsearch
       - ticketer
       - nginx
       - textual-encoders
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.0
+    # container_name: elasticsearch-master
+    networks:
+      - "semantic-search-network"
+    environment:
+      - discovery.type=single-node
+      - cluster.name=es-docker
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms3g -Xmx3g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
 
   ticketer:
     image: registry.melior.ai/ticketer:0.2.1
@@ -112,6 +135,11 @@ services:
       - "27017:27017"
 
 
+# Mount volumes makes it independent of the directory structure:
+# https://stackoverflow.com/a/47152658/1522304
+volumes:
+  es-data:
+    driver: local
 networks:
   semantic-search-network: {}
   mongo-network: {}

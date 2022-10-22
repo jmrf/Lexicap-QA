@@ -29,10 +29,10 @@ index:
       text_fields:
         - "external_id"
 
-  # - ElasticIndexerComponent:
-  #     _name: elastic-indexer
-  #     elastic_endpoint: "http://localhost:9200"
-  #     index_name: wikiretrieval-dev-docs
+  - ElasticIndexerComponent:
+      _name: elastic-indexer
+      elastic_endpoint: "http://elasticsearch:9200"
+      index_name: lexicap-qa-1m
 
   - HTTPEncoder:
       _name: http-textual-encoder
