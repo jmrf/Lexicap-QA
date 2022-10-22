@@ -198,24 +198,6 @@ def _read_doc_index_data(mongo_uri, db_name, collection_name):
             exit()
 
 
-def _read_doc_meta_data(mongo_uri, db_name, collection_name):
-    with console.status("Fetching docs...", spinner="monkey"):
-        try:
-            col = MongoClient(mongo_uri)[db_name][collection_name]
-
-            # NOTE: modify as needed
-            docs = col.find(
-                collection_name,
-                {"created": {"$gt": dateutil.parser.isoparse("2021-09-01")}},
-            )
-
-            return docs
-
-        except Exception as e:
-            logger.exception(f"Error reading data to index: {e}")
-            exit()
-
-
 def _build_index(
     data_to_index: Iterable[Dict[str, Any]],
     es,

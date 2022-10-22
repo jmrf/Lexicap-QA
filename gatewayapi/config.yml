@@ -1,0 +1,48 @@
+ResultsCache:
+  redis:
+    host: redis
+    port: 6379
+
+QueryLogsStore:
+  mongo:
+    mongoURI: mongodb://mongo:27017
+    db_name: lexicap-logs
+
+FeedbackStore:
+  mongo:
+    mongoURI: mongodb://mongo:27017
+    db_name: lexicap-feedback
+
+AssetsStore:
+  # root url of the 'image_url' field assets
+  image_url: ""
+
+Pipeline:
+  Categories:
+    content:
+      result_type: ContentResultType
+      types: "content"
+      Preprocessors: []
+
+      Searchers:
+        - elastic:
+            _name: lexical
+            endpoint: "http://elasticsearch:9200"
+            index_name: lexicap-qa-1m
+            aggregate_by_doc_id: true
+            # As per: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html
+            query_params:
+              size: 100
+              analyzer: english_analyzer
+              _source: doc_id,doc_name,text,extra_fields
+
+        - semantic:
+            _name: semantic
+            endpoint: "http://semantic-inference:9400/query"
+            aggregate_by_doc_id: true
+
+      Postprocessors: []
+        # - qa:
+        #     _name: qa
+        #     endpoint: "http://knext-answer-extractor:7000/extract_answers"
+        #     known_item_types: ["page"]

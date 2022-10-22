@@ -14,7 +14,7 @@ index:
       _module_path: feeder.VTTFeeder
       data_path: /app/mount/data/
       globmask: "vtt/*_large.vtt"
-      batch_size: 1000
+      batch_size: 10
 
   - SentenceSplitterComponent:
       _name: preproc_setence_split
@@ -70,11 +70,12 @@ query:
   - AggregatorComposer:
       # fetches all docs from Mongo where 'extra_fields.semantic': True
       # to compose an inverse index from doc.section.chunk -> doc.section -> doc
-      op: max
-      n_best_matches: 100
+      op: avg
+      n_best_matches: 500
       mode: MONGODB
       collection_name: docs
       order: desc
       extra_fields:
         - guest
         - title
+        - type  # NOTE: necessary so the gateway-api picks up the results

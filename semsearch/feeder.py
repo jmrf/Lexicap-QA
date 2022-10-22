@@ -10,7 +10,7 @@ from typing import Dict
 from typing import List
 from typing import Union
 
-from semsearch.pipeline.doc import Doc
+from semsearch.pipeline.doc import Doc    # noqa
 from semsearch.feeders import FileFeeder  # noqa
 
 
@@ -198,15 +198,18 @@ class VTTFeeder(FileFeeder):
             else:
                 chunks = self._split_with_text_indices(sfile)
 
-            # We index a Document with only 1 section per sentence
+            # We index a Document with only as many sections as 1 minute audio chunks
             extra_fields = {
-                "semantic": True,  # Or all sort of bad things will happen ;)
+                "type": "content", # NOTE: required for the gateway-api
+                "semantic": True,  # NOTE: required for semsearch-inference
                 **ep_info,
             }
             doc = Doc(external_id=str(s_i), text="", extra_fields=extra_fields)
             doc.name = f"{ep_info['title']} #{s_i}"
             for c_i, chunk in enumerate(chunks):
                 doc.add_section(
+                    # Can we add boundary information to a section?
+                    # i.e.: (start, end)
                     section_number=c_i, name="", text=chunk["text"], weight=1
                 )
 

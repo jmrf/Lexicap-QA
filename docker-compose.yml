@@ -1,8 +1,40 @@
 version: "3.8"
 
+x-logging:
+  &default-logging
+  options:
+    max-size: "200k"
+    max-file: "10"
+
 services:
-  search-inference:
+
+  gateway-api:
+    image: registry.melior.ai/gateway-api:0.12.2
+    networks:
+      - "semantic-search-network"
+    logging: *default-logging
+    ports:
+      - "10000:10000"
+    volumes:
+      - "$PWD/gatewayapi/:/app/conf"
+    command:
+      - -m
+      - graphql
+      - -c
+      - /app/conf/config.yml
+      - -s
+      - /app/conf/schema.json
+    environment:
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      - mongo
+      - redis
+      - elasticsearch
+      - semantic-inference
+
+  semantic-inference:
     image: registry.melior.ai/semantic-search:1.1.0
+    logging: *default-logging
     networks:
       - "semantic-search-network"
     ports:
@@ -20,8 +52,9 @@ services:
       - nginx
       - textual-encoders
 
-  search-indexer:
+  semantic-indexer:
     image: registry.melior.ai/semantic-search:1.1.0
+    logging: *default-logging
     networks:
       - "semantic-search-network"
     volumes:

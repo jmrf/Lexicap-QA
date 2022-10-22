@@ -1,0 +1,21 @@
+{
+    "ContentResultType": {
+        "parent_class": "BaseContentResultType",
+        "fields": {
+            "sections": "graphene.List(TextSectionType, default_value=[], description=\"List of sections matching the query\")",
+            "guest": "graphene.String(description=\"Podcast's guest\")",
+            "name": "graphene.String(description=\"Podcast's title\")"
+        }
+    },
+    "SubscriptionResultInfoType": {
+        "parent_class": "BaseSubscriptionResultInfoType",
+        "fields": {
+        }
+    },
+    "SearchResponseType": {
+        "parent_class": "BaseSearchResponseType",
+        "fields": {
+            "content_hits": "graphene.List(ContentResultType, description=\"Search results matching content (i.e.: Podcast transcript chunks)\", default_value=[])"
+        }
+    }
+}
