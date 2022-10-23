@@ -6,12 +6,12 @@ ResultsCache:
 QueryLogsStore:
   mongo:
     mongoURI: mongodb://mongo:27017
-    db_name: lexicap-logs
+    db_name: lexicap-logs-sent-split
 
 FeedbackStore:
   mongo:
     mongoURI: mongodb://mongo:27017
-    db_name: lexicap-feedback
+    db_name: lexicap-feedback-sent-split
 
 AssetsStore:
   # root url of the 'image_url' field assets
@@ -28,7 +28,7 @@ Pipeline:
         - elastic:
             _name: lexical
             endpoint: "http://elasticsearch:9200"
-            index_name: lexicap-qa-1m
+            index_name: lexicap-qa-sent-split
             aggregate_by_doc_id: true
             # As per: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html
             query_params:

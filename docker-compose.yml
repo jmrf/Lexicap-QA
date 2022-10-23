@@ -120,7 +120,8 @@ services:
     runtime: nvidia
     networks:
       - "semantic-search-network"
-    scale: 2
+    deploy:
+      replicas: 2
     expose:
       - "9600"
     command:

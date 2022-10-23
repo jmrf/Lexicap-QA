@@ -5,7 +5,7 @@ storage:
     - MongoStore:
         _name: mongo-store
         mongoURI: mongodb://mongo:27017
-        db_name: lexicap-qa
+        db_name: lexicap-qa-sent-split
 
 index:
 
@@ -14,12 +14,13 @@ index:
       _module_path: feeder.VTTFeeder
       data_path: /app/mount/data/
       globmask: "vtt/*_large.vtt"
-      batch_size: 10
+      split_by_time: false
+      batch_size: 25
 
   - SentenceSplitterComponent:
       _name: preproc_setence_split
       endpoint: "http://ticketer:7508/v0.2/"  # ticketer URI
-      ticketer_key: "lexicap"
+      ticketer_key: "lexicap-sent-split"
 
   - MongoDocStore:
       _name: mongo-doc-store
@@ -32,7 +33,7 @@ index:
   - ElasticIndexerComponent:
       _name: elastic-indexer
       elastic_endpoint: "http://elasticsearch:9200"
-      index_name: lexicap-qa-1m
+      index_name: lexicap-qa-sent-split
 
   - HTTPEncoder:
       _name: http-textual-encoder
@@ -43,7 +44,7 @@ index:
   - FaissIndexerComponent:
       _name: FAISS-indexer
       out_dir: /app/mount/indices
-      file_name: lexicap_msmarco-distilbert-base-v2_faiss.index
+      file_name: lexicap_sent-split_msmarco-distilbert-base-v2_faiss.index
       index_type: "IDMap,L2norm,IVF25,Flat"
       metric: "L2"
       vec_dim: 768
@@ -64,7 +65,7 @@ query:
       max_concurrent_tasks: 1
 
   - FaissQueryComponent:
-      index_file_path: /app/mount/indices/lexicap_msmarco-distilbert-base-v2_faiss.index
+      index_file_path: /app/mount/indices/lexicap_sent-split_msmarco-distilbert-base-v2_faiss.index
       neighbors: 50
 
   - AggregatorComposer:
