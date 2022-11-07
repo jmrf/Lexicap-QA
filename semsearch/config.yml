@@ -1,0 +1,82 @@
+external_modules_paths:
+  - /app/mount
+
+storage:
+    - MongoStore:
+        _name: mongo-store
+        mongoURI: mongodb://mongo:27017
+        db_name: lexicap-qa-sent-split
+
+index:
+
+  - LexicapFeeder:
+      _name: lexicap-data-reader
+      _module_path: feeder.VTTFeeder
+      data_path: /app/mount/data/
+      globmask: "vtt/*_large.vtt"
+      split_by_time: false
+      batch_size: 25
+
+  - SentenceSplitterComponent:
+      _name: preproc_setence_split
+      endpoint: "http://ticketer:7508/v0.2/"  # ticketer URI
+      ticketer_key: "lexicap-sent-split"
+
+  - MongoDocStore:
+      _name: mongo-doc-store
+      collection_name: docs
+      unique_fields:
+        - "id"
+      text_fields:
+        - "external_id"
+
+  - ElasticIndexerComponent:
+      _name: elastic-indexer
+      elastic_endpoint: "http://elasticsearch:9200"
+      index_name: lexicap-qa-sent-split
+
+  - HTTPEncoder:
+      _name: http-textual-encoder
+      encode_endpoint: http://nginx:4000/encode
+      max_request_batch_size: 128
+      max_concurrent_tasks: 2
+
+  - FaissIndexerComponent:
+      _name: FAISS-indexer
+      out_dir: /app/mount/indices
+      file_name: lexicap_sent-split_msmarco-distilbert-base-v2_faiss.index
+      index_type: "IDMap,L2norm,IVF25,Flat"
+      metric: "L2"
+      vec_dim: 768
+
+
+query:
+
+  - ListFeeder:
+      _name: text-list-feeder
+
+  - SentenceSplitterComponent:
+      _name: preproc_setence_split
+
+  - HTTPEncoder:
+      _name: http-textual-encoder
+      encode_endpoint: http://nginx:4000/encode
+      max_request_batch_size: 32
+      max_concurrent_tasks: 1
+
+  - FaissQueryComponent:
+      index_file_path: /app/mount/indices/lexicap_sent-split_msmarco-distilbert-base-v2_faiss.index
+      neighbors: 50
+
+  - AggregatorComposer:
+      # fetches all docs from Mongo where 'extra_fields.semantic': True
+      # to compose an inverse index from doc.section.chunk -> doc.section -> doc
+      op: avg
+      n_best_matches: 500
+      mode: MONGODB
+      collection_name: docs
+      order: desc
+      extra_fields:
+        - guest
+        - title
+        - type  # NOTE: necessary so the gateway-api picks up the results

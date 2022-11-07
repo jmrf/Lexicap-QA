@@ -2,8 +2,11 @@
 .venv/
 .env
 
-data/
 distributed_faiss_storage/
+semsearch/indices/
 logs/
+
+data/**
+!data/episode_names.txt
 
 *.pyc

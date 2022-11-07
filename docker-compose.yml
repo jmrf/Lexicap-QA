@@ -1,0 +1,179 @@
+version: "3.8"
+
+x-logging:
+  &default-logging
+  options:
+    max-size: "200k"
+    max-file: "10"
+
+services:
+
+  gateway-api:
+    image: registry.melior.ai/gateway-api:0.12.2
+    networks:
+      - "semantic-search-network"
+    logging: *default-logging
+    ports:
+      - "10000:10000"
+    volumes:
+      - "$PWD/gatewayapi/:/app/conf"
+    command:
+      - -m
+      - graphql
+      - -c
+      - /app/conf/config.yml
+      - -s
+      - /app/conf/schema.json
+    environment:
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      - mongo
+      - redis
+      - elasticsearch
+      - semantic-inference
+
+  semantic-inference:
+    image: registry.melior.ai/semantic-search:1.1.0
+    logging: *default-logging
+    networks:
+      - "semantic-search-network"
+    ports:
+      - "9400:9400"
+    volumes:
+      - "$PWD/semsearch:/app/mount"
+    command:
+      - inference-server
+      - -c
+      - /app/mount/config.yml
+    environment:
+      - LOG_LEVEL=INFO
+    depends_on:
+      - mongo
+      - nginx
+      - textual-encoders
+
+  semantic-indexer:
+    image: registry.melior.ai/semantic-search:1.1.0
+    logging: *default-logging
+    networks:
+      - "semantic-search-network"
+    volumes:
+      - "$PWD/data:/app/mount/data"
+      - "$PWD/semsearch:/app/mount"
+    command:
+      - index
+      - -c
+      - /app/mount/config.yml
+    environment:
+      - LOG_LEVEL=INFO
+    depends_on:
+      - mongo
+      - elasticsearch
+      - ticketer
+      - nginx
+      - textual-encoders
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.0
+    # container_name: elasticsearch-master
+    networks:
+      - "semantic-search-network"
+    environment:
+      - discovery.type=single-node
+      - cluster.name=es-docker
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms3g -Xmx3g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  ticketer:
+    image: registry.melior.ai/ticketer:0.2.1
+    # network_mode: "host"
+    networks:
+      - "semantic-search-network"
+    ports:
+      - "7508:7508"
+    command:
+      - --port
+      - "7508"
+      - --debug
+    environment:
+      - LOG_LEVEL=DEBUG
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+
+  textual-encoders:
+    # image: registry.melior.ai/textual-encoders-cpu:0.10.1
+    image: registry.melior.ai/textual-encoders-cuda:0.8.3
+    runtime: nvidia
+    networks:
+      - "semantic-search-network"
+    deploy:
+      replicas: 2
+    expose:
+      - "9600"
+    command:
+      - -e
+      - msmarco-distilbert-base-v2
+      - --model-dir
+      - /app/mount/models
+      - --use-cuda
+      - -vv
+    volumes:
+      - "./semsearch/models/:/app/mount/models"
+    environment:
+      - LOG_LEVEL=DEBUG
+
+  redis:
+    image: redis
+    # network_mode: "host"
+    networks:
+      - "semantic-search-network"
+    ports:
+      - "6379:6379"
+    command:
+      - redis-server
+      - --protected-mode
+      - "no"
+
+  nginx:
+    image: nginx:latest
+    networks:
+      - "semantic-search-network"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "4000:4000"
+    depends_on:
+      - textual-encoders
+
+  mongo:
+    image: mongo:latest
+    # network_mode: "host"
+    networks:
+      - mongo-network
+      - semantic-search-network
+    ports:
+      - "27017:27017"
+
+
+# Mount volumes makes it independent of the directory structure:
+# https://stackoverflow.com/a/47152658/1522304
+volumes:
+  es-data:
+    driver: local
+networks:
+  semantic-search-network: {}
+  mongo-network: {}
